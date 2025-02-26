@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WEB制作事業用ホームページ
 
-## Getting Started
+## コンセプト・事業原案
 
-First, run the development server:
+1. サービス概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1-1. 事業コンセプト
+	•	サービス名（屋号）: Edge works
+	•	ミッション: 個人事業主が安価かつ素人感のない高品質なHPを簡単に持てるようにする。
+	•	特徴:
+	•	初期費用なし、月額3,000円のみ。
+	•	ドメイン取得、ホスティング、保守・運用まで一貫サポート。
+	•	テンプレートではなくオーダーメイドで作成。
+	•	スマホ対応を前提としたモバイルファーストなデザイン。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1-2. 背景と狙い
+	•	従来の問題点
+	•	一般的なWEB制作は初期費用が高額（10万円以上）になりがち。
+	•	保守費用も別途かかるケースが多い。
+	•	Edge worksの解決策
+	•	生成AIなどを活用した効率的な制作体制。
+	•	必要最小限の機能に絞り、コストを最小化。
+	•	月額制3,000円のみで、面倒なサーバー・ドメイン管理をすべて代行。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. ターゲット・強み
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2-1. ターゲット顧客
+	•	個人事業主
+	•	Googleマップの店舗情報や法令対応としてHPが必要だが、初期費用が高いサービスは避けたい。
+	•	安価でも最低限「今風のデザイン」「素人感のないサイト」を希望。
+	•	詳細なSEOや高度な機能を求めていない（またはそこまで予算をかけたくない）。
 
-## Learn More
+2-2. 競合優位性
+	•	わかりやすい月額3,000円ポッキリ
+	•	隠れた追加費用や複雑なプランがない。
+	•	オーダーメイドデザイン
+	•	テンプレートではなく、独自にデザインを作成。
+	•	モバイルファーストでスマホ表示に最適化。
+	•	丸っとお任せ
+	•	サーバー・ドメイン管理、SSL更新なども一括で代行。
+	•	面倒な手続きや技術的負担が一切不要。
 
-To learn more about Next.js, take a look at the following resources:
+3. プラン・料金体系
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3-1. 基本プラン（3,000円／月）
+	•	初期費用: 0円
+	•	制作ページ数: 最大5ページ
+	•	ドメイン・サーバー管理費用: 月額3,000円に含む
+	•	SEO内部施策: 基本的なmetaタグや構造を最適化
+	•	保守・運用: 定期的なアップデート・SSL更新などを代行
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3-2. オプション・追加費用
+	•	お問い合わせフォーム: ＋1,000円／月
+	•	または、Form系サービスへのリンクで対応（無料）
+	•	大幅なデザイン変更・ページ追加: 2,000円〜(都度見積もり)
+	•	翌月以降の月額が変動することはなし
+	•	納品後の修正対応: 軽微なものはサポート内で対応可能。大幅改修は別途見積もり。
 
-## Deploy on Vercel
+4. サービス内容・制作フロー
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4-1. 提供範囲
+	•	デザイン: オリジナルのデザイン案を作成
+	•	コーディング: HTML/CSS/JavaScriptを中心に、静的サイトとして制作
+	•	ホスティング: サーバー選定・セットアップ一式
+	•	ドメイン取得・管理: 独自ドメインの取得・更新代行
+	•	SSL証明書対応: HTTPS化で安全・信頼性を確保
+	•	保守: サーバー監視やセキュリティ更新などの運用管理
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4-2. 制作の流れ
+	1.	お問い合わせ・ヒアリング
+	•	専用フォーム or メールで希望のコンセプト・デザインの要望を伺う
+	•	必要に応じてGoogle Meet等で打合せ
+	2.	仮デザイン案の作成・提案
+	•	仮のドメイン（テスト用URL）でサイトを確認可能
+	3.	デザイン・コンテンツ修正
+	•	お客様のフィードバックをもとに細部を調整
+	4.	ドメイン取得・公開
+	•	ご希望のドメインを取得し、本番環境へ移行
+	5.	納品・運用開始
+	•	最短3営業日〜のスピード対応可（要ヒアリング内容の確定）
+
+5. 実績・今後のポートフォリオ
+	•	現在の制作実績:
+	•	パーソナルジムサイトを受注中。完成後、許可を得て公開予定。
+	•	将来的なポートフォリオ:
+	•	サイトを増やし、主要クライアントの一覧を掲載予定。
+	•	個人事業ならではのフットワーク
+	•	実績が増え次第、事例を随時アップデート。
+
+6. サポート体制・連絡方法
+
+6-1. サポート体制
+	•	メールサポート: 常時受け付け
+	•	Google Meet: ご希望の場合、オンラインミーティング対応
+	•	対応時間: 特に制限なし（メールは随時確認）
+
+6-2. 連絡方法・ヒアリング
+	•	専用フォーム: お客様情報・コンセプト記入欄を用意
+	•	電話対応: 行わない（低コスト化・効率化のため）
+	•	LINE導線: 必要に応じて対応可（個人事業主には便利）
+
+7. デザイン方針・サイトイメージ
+	•	全体テーマカラー: 青白系統で誠実さ・プロフェッショナル感を演出
+	•	ファーストビュー演出: 背景動画＋キャッチコピーの重ね表示
+	•	「良質なホームページを安く・手軽に」などを大きく配置
+	•	モバイルファースト: スマートフォンでの閲覧を最優先に最適化
+
+8. キャッチコピー例
+	1.	「良質なホームページを安く・手軽に」
+	2.	「月額3,000円でホームページ制作」
+	3.	「テンプレートを使わないオリジナルデザイン」
+
+上記のいずれか、または組み合わせて利用し、ファーストビューで強く訴求。
+
+9. 運営者情報
+	•	屋号: Edge works
+	•	代表者: 個人事業主（WEBエンジニアとしての経歴あり）
+	•	所在地・連絡先: メールアドレスを中心に対応（電話は非対応）
+	•	理念: 「誰にでも安価で高性能なホームページを」
+
+10. よくある質問（例）
+	1.	Q. 本当に初期費用は0円ですか？
+	•	A. はい。ドメイン取得費・デザイン費も月額3,000円に含んでいます。
+	2.	Q. 依頼からどのくらいで公開できますか？
+	•	A. 最短3営業日〜、ヒアリングや素材準備の状況次第です。
+	3.	Q. お問い合わせフォームは設置できますか？
+	•	A. 月額+1,000円でご利用可能です。またはFormサービスをリンクで利用すれば無料です。
+	4.	Q. 大幅なデザイン変更が必要になったら？
+	•	A. 都度見積もりいたしますが、月額自体は変わりません。
+
+11. お問い合わせ・次のステップ
+	•	お問い合わせフォーム
+	•	希望イメージ・コンセプト・参考サイトなどあればご記入を。
+	•	Google Meetでの打合せ可
+	•	画面共有でデザイン案を確認しながら調整。
+	•	メールアドレス
+	•	迅速に回答を心がけます。お急ぎの場合もお気軽にご連絡ください。
