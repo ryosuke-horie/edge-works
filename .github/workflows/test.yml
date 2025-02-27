@@ -53,11 +53,29 @@ jobs:
             exit 1
           fi
 
+      # (1) coverage-summary.json から数値を取得して Actions の出力変数にセット
+      - name: Collect coverage info
+        id: coverage
+        run: |
+          echo "statements=$(cat coverage/coverage-summary.json | jq -r '.total.statements.pct')" >> $GITHUB_OUTPUT
+          echo "branches=$(cat coverage/coverage-summary.json | jq -r '.total.branches.pct')" >> $GITHUB_OUTPUT
+          echo "functions=$(cat coverage/coverage-summary.json | jq -r '.total.functions.pct')" >> $GITHUB_OUTPUT
+          echo "lines=$(cat coverage/coverage-summary.json | jq -r '.total.lines.pct')" >> $GITHUB_OUTPUT
+
+      # (2) 取得した数値を Markdown 形式のテーブルに埋め込んでコメント投稿
       - name: Post Coverage Comment
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: |
-            ## Test Coverage Report
-            $(cat coverage/coverage-summary.json | jq -r '"Total Coverage: \(.total.lines.pct)%\n\nBreakdown:\n- Statements: \(.total.statements.pct)%\n- Functions: \(.total.functions.pct)%\n- Branches: \(.total.branches.pct)%\n- Lines: \(.total.lines.pct)%"')
+            ## テストカバレッジレポート
+
+            | カバレッジ項目                  | 割合    |
+            |--------------------------------|---------|
+            | ステートメント (Statements)    | ${{ steps.coverage.outputs.statements }}% |
+            | ブランチ (Branches)            | ${{ steps.coverage.outputs.branches }}%   |
+            | 関数 (Functions)               | ${{ steps.coverage.outputs.functions }}%  |
+            | 行 (Lines)                     | ${{ steps.coverage.outputs.lines }}%      |
+
+            <!-- Sticky Pull Request Comment -->
