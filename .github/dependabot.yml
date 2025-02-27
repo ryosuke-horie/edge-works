@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # npmパッケージの依存関係を管理
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+
+  # GitHub Actionsの依存関係を管理
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
