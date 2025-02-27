@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "opennextjs-cloudflare",
+		"build": "next build",
 		"lint": "npx @biomejs/biome check",
 		"format": "npx @biomejs/biome check --write",
 		"test": "vitest",
