@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+		<div className="min-h-screen bg-linear-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
 			{/* ヘッダー */}
-			<header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+			<header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-xs">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center h-16">
 						{/* ロゴ */}
@@ -86,7 +86,7 @@ export default function Home() {
 					/>
 
 					{/* グラデーションオーバーレイ */}
-					<div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 to-black/60 mix-blend-multiply" />
+					<div className="absolute inset-0 bg-linear-to-b from-blue-900/50 to-black/60 mix-blend-multiply" />
 				</div>
 
 				{/* キャッチコピー */}
@@ -125,7 +125,7 @@ export default function Home() {
 
 					{/* 最短3日で納品可能のバッジ - シンプルで目立つデザイン */}
 					<div className="mb-8 transform hover:scale-105 transition-transform">
-						<div className="bg-white/10 backdrop-blur-sm px-6 py-3 border-l-4 border-blue-300 text-white text-lg font-bold">
+						<div className="bg-white/10 backdrop-blur-xs px-6 py-3 border-l-4 border-blue-300 text-white text-lg font-bold">
 							⚡ 最短3日で納品可能
 						</div>
 					</div>
@@ -177,10 +177,10 @@ export default function Home() {
 						<div className="space-y-12 max-w-2xl mx-auto">
 							{/* Step 1 */}
 							<div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-								<div className="flex-shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
+								<div className="shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
 									1
 								</div>
-								<div className="flex-grow text-center md:text-left">
+								<div className="grow text-center md:text-left">
 									<h3 className="text-xl font-semibold mb-2">
 										お問い合わせ・ヒアリング
 									</h3>
@@ -196,10 +196,10 @@ export default function Home() {
 
 							{/* Step 2 */}
 							<div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-								<div className="flex-shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
+								<div className="shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
 									2
 								</div>
-								<div className="flex-grow text-center md:text-left">
+								<div className="grow text-center md:text-left">
 									<h3 className="text-xl font-semibold mb-2">
 										仮デザイン案の作成・提案
 									</h3>
@@ -211,10 +211,10 @@ export default function Home() {
 
 							{/* Step 3 */}
 							<div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-								<div className="flex-shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
+								<div className="shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
 									3
 								</div>
-								<div className="flex-grow text-center md:text-left">
+								<div className="grow text-center md:text-left">
 									<h3 className="text-xl font-semibold mb-2">
 										デザイン・コンテンツ修正
 									</h3>
@@ -226,10 +226,10 @@ export default function Home() {
 
 							{/* Step 4 */}
 							<div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-								<div className="flex-shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
+								<div className="shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
 									4
 								</div>
-								<div className="flex-grow text-center md:text-left">
+								<div className="grow text-center md:text-left">
 									<h3 className="text-xl font-semibold mb-2">
 										ドメイン取得・公開
 									</h3>
@@ -241,10 +241,10 @@ export default function Home() {
 
 							{/* Step 5 */}
 							<div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-								<div className="flex-shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
+								<div className="shrink-0 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto md:mx-0">
 									5
 								</div>
-								<div className="flex-grow text-center md:text-left">
+								<div className="grow text-center md:text-left">
 									<h3 className="text-xl font-semibold mb-2">納品・運用開始</h3>
 									<ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
 										<li>
