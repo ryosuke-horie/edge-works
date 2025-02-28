@@ -9,6 +9,33 @@ updates:
       prefix: "chore"
       prefix-development: "chore"
       include: "scope"
+    # ここで特定パッケージをグルーピング
+    groups:
+      next-react-deployment:
+        patterns:
+          # 依存パッケージ名ベースでの指定
+          - "next"
+          - "react"
+          - "react-dom"
+          - "wrangler"
+          - "@opennextjs/cloudflare"
+          - "@cloudflare/workers-types"
+          - "@types/node"
+          - "@types/react"
+          - "@types/react-dom"
+          - "@vitejs/plugin-react"
+          - "jsdom"
+      styles:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/postcss"
+          - "postcss"
+      tests:
+        patterns:
+          - "vitest"
+          - "@vitest/coverage-v8"
+          - "@testing-library/dom"
+          - "@testing-library/react"
 
   # GitHub Actionsの依存関係を管理
   - package-ecosystem: "github-actions"
