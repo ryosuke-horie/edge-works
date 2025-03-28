@@ -9,8 +9,8 @@
 		"format": "npx @biomejs/biome check --write",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage",
-		"deploy": "opennextjs-cloudflare && wrangler deploy",
-		"preview": "opennextjs-cloudflare && wrangler dev",
+		"deploy": "opennextjs-cloudflare build && wrangler deploy",
+		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
 	},
 	"dependencies": {
@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@cloudflare/workers-types": "^4.20250321.0",
-		"@opennextjs/cloudflare": "^0.5.12",
+		"@opennextjs/cloudflare": "0.6.3",
 		"@tailwindcss/postcss": "^4.0.16",
 		"@testing-library/dom": "^10.4.0",
 		"@testing-library/react": "^16.2.0",
