@@ -7,10 +7,10 @@ export default function Brands() {
 				</p>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
 					{/* Replace with actual logos */}
-					<div className="h-8 w-32 bg-gray-200 rounded"></div>
-					<div className="h-8 w-32 bg-gray-200 rounded"></div>
-					<div className="h-8 w-32 bg-gray-200 rounded"></div>
-					<div className="h-8 w-32 bg-gray-200 rounded"></div>
+					<div className="h-8 w-32 bg-gray-200 rounded" />
+					<div className="h-8 w-32 bg-gray-200 rounded" />
+					<div className="h-8 w-32 bg-gray-200 rounded" />
+					<div className="h-8 w-32 bg-gray-200 rounded" />
 				</div>
 			</div>
 		</section>

@@ -54,8 +54,8 @@ export default function Pricing() {
 							</div>
 
 							<ul className="space-y-4 mb-10">
-								{features.map((feature, index) => (
-									<PricingFeature key={index} text={feature} />
+								{features.map((feature) => (
+									<PricingFeature key={feature} text={feature} />
 								))}
 							</ul>
 

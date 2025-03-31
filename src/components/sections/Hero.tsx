@@ -29,10 +29,10 @@ export default function Hero() {
 				</div>
 
 				{/* Gradient overlays */}
-				<div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-sky-300 to-transparent opacity-20"></div>
-				<div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-sky-300 to-transparent opacity-20"></div>
-				<div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-sky-300 to-transparent opacity-20"></div>
-				<div className="absolute inset-y-0 right-0 w-64 bg-gradient-to-l from-sky-300 to-transparent opacity-20"></div>
+				<div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-sky-300 to-transparent opacity-20" />
+				<div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-sky-300 to-transparent opacity-20" />
+				<div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-sky-300 to-transparent opacity-20" />
+				<div className="absolute inset-y-0 right-0 w-64 bg-gradient-to-l from-sky-300 to-transparent opacity-20" />
 			</div>
 
 			<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
@@ -64,7 +64,7 @@ export default function Hero() {
 							<h3 className="text-xl font-bold text-sky-700 mb-1">
 								うれしいポイント
 							</h3>
-							<div className="w-12 h-1 bg-sky-500 mx-auto"></div>
+							<div className="w-12 h-1 bg-sky-500 mx-auto" />
 						</div>
 
 						<FeatureBox icon="cost" title="制作費無料" />

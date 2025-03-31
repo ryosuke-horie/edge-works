@@ -94,8 +94,8 @@ export default function Features() {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-					{features.map((feature, index) => (
-						<FeatureCard key={index} {...feature} />
+					{features.map((feature) => (
+						<FeatureCard key={feature.title} {...feature} />
 					))}
 				</div>
 			</div>

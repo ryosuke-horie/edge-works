@@ -47,8 +47,8 @@ export default function FAQ() {
 
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-8">
-						{faqItems.map((item, index) => (
-							<FAQItem key={index} {...item} />
+						{faqItems.map((item) => (
+							<FAQItem key={item.question} {...item} />
 						))}
 					</div>
 				</div>
