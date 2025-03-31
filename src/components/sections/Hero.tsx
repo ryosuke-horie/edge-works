@@ -3,49 +3,27 @@ import Button from "../ui/Button";
 export default function Hero() {
 	return (
 		<section className="relative pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
-			{/* Background Elements */}
-			<div className="absolute inset-0 bg-sky-100 overflow-hidden">
-				{/* Hexagon pattern background */}
-				<div className="absolute inset-0 opacity-20">
-					<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-						<defs>
-							<pattern
-								id="hexagons"
-								width="50"
-								height="43.4"
-								patternUnits="userSpaceOnUse"
-								patternTransform="scale(5)"
-							>
-								<polygon
-									points="24.8,22 37.3,29.2 37.3,43.7 24.8,50.9 12.4,43.7 12.4,29.2"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="1"
-								/>
-							</pattern>
-						</defs>
-						<rect width="100%" height="100%" fill="url(#hexagons)" />
-					</svg>
-				</div>
-
-				{/* Gradient overlays */}
-				<div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-sky-300 to-transparent opacity-20" />
-				<div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-sky-300 to-transparent opacity-20" />
-				<div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-sky-300 to-transparent opacity-20" />
-				<div className="absolute inset-y-0 right-0 w-64 bg-gradient-to-l from-sky-300 to-transparent opacity-20" />
+			{/* Background Image */}
+			<div className="absolute inset-0 overflow-hidden">
+				<div
+					className="absolute inset-0 bg-repeat"
+					style={{ backgroundImage: 'url("/hero_tex_green.png")' }}
+				/>
+				<div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-blue-900 to-transparent opacity-10" />
+				<div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-blue-900 to-transparent opacity-10" />
+				<div className="absolute inset-y-0 left-0 w-64 bg-gradient-to-r from-blue-900 to-transparent opacity-10" />
+				<div className="absolute inset-y-0 right-0 w-64 bg-gradient-to-l from-blue-900 to-transparent opacity-10" />
 			</div>
 
 			<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
 				<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
 					{/* Left Content */}
 					<div className="max-w-2xl mb-12 lg:mb-0">
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-							<span className="block">デザイン性抜群</span>
-							<span className="block text-5xl md:text-6xl lg:text-7xl text-sky-500 my-4">
-								&
-							</span>
-							<span className="block text-3xl md:text-4xl lg:text-5xl">
-								制作費無料の月額制
+						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+							<span className="block text-3xl md:text-4xl lg:text-5xl text-gray-50">
+								制作費
+								<span className="text-yellow-300 font-extrabold">無料</span>
+								の月額制
 								<br />
 								ホームページ制作サービス
 							</span>
@@ -60,7 +38,7 @@ export default function Hero() {
 
 					{/* Right Content - Feature Boxes */}
 					<div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-						<div className="col-span-2 bg-white rounded-lg shadow-md p-4 text-center">
+						<div className="col-span-2 bg-white/95 backdrop-blur rounded-lg shadow-md p-4 text-center">
 							<h3 className="text-xl font-bold text-sky-700 mb-1">
 								うれしいポイント
 							</h3>
@@ -111,7 +89,7 @@ function FeatureBox({
 	};
 
 	return (
-		<div className="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
+		<div className="bg-white/95 backdrop-blur rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
 			<div className="w-10 h-10 mx-auto bg-sky-100 rounded-full flex items-center justify-center mb-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
