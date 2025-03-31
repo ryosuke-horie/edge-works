@@ -37,19 +37,11 @@ export default function Hero() {
 					</div>
 
 					{/* Right Content - Feature Boxes */}
-					<div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-						<div className="col-span-2 bg-white/95 backdrop-blur rounded-lg shadow-md p-4 text-center">
-							<h3 className="text-xl font-bold text-sky-700 mb-1">
-								うれしいポイント
-							</h3>
-							<div className="w-12 h-1 bg-sky-500 mx-auto" />
-						</div>
-
+					<div className="grid grid-cols-2 gap-6 max-w-lg mx-auto">
+						<FeatureBox icon="quality" title="うれしいポイント＞＞" />
 						<FeatureBox icon="cost" title="制作費無料" />
 						<FeatureBox icon="time" title="1ヶ月で完成" />
-						<div className="col-span-2">
-							<FeatureBox icon="price" title="月々2000円〜" />
-						</div>
+						<FeatureBox icon="price" title="月々2000円〜" />
 					</div>
 				</div>
 			</div>
@@ -60,7 +52,7 @@ export default function Hero() {
 function FeatureBox({
 	icon,
 	title,
-}: { icon: "cost" | "time" | "price"; title: string }) {
+}: { icon: "cost" | "time" | "price" | "quality"; title: string }) {
 	const icons = {
 		cost: (
 			<path
@@ -86,14 +78,21 @@ function FeatureBox({
 				/>
 			</g>
 		),
+		quality: (
+			<path
+				fillRule="evenodd"
+				d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+				clipRule="evenodd"
+			/>
+		),
 	};
 
 	return (
-		<div className="bg-white/95 backdrop-blur rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-shadow">
-			<div className="w-10 h-10 mx-auto bg-sky-100 rounded-full flex items-center justify-center mb-3">
+		<div className="bg-white/95 backdrop-blur rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+			<div className="w-12 h-12 mx-auto bg-sky-100 rounded-full flex items-center justify-center mb-4">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					className="h-5 w-5 text-sky-600"
+					className="h-6 w-6 text-sky-600"
 					viewBox="0 0 20 20"
 					fill="currentColor"
 				>
